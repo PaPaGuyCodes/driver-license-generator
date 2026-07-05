@@ -75,9 +75,16 @@
             <input type="text" id="lastName">
         </div>
         <button id="generateBtn">Generate License</button>
-        <button id="validateBtn" style="display:none;margin-left:8px;">Validate</button>
 
-    <div id="licenseNumber"></div>
+        <div id="licenseNumber"></div>
+
+        <div class="form-group">
+            <label for="licenseInput">License Number to validate:</label>
+            <input type="text" id="licenseInput" placeholder="Enter license number">
+        </div>
+        <button id="validateBtn">Validate License</button>
+        <div id="validationResult" class="message"></div>
+
         <button id="downloadBtn" style="display:none;">Download Barcode</button>
         <div id="barcode"></div>
         <button id="themeToggle">Toggle Theme</button>

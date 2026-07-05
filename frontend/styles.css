@@ -30,6 +30,19 @@ button:hover {
     background-color: #ddd;
 }
 
+.message {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.message.success {
+    color: #1a7f37;
+}
+
+.message.error {
+    color: #b00020;
+}
+
 footer {
     text-align: center;
     margin-top: 20px;

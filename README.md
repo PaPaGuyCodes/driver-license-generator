@@ -34,6 +34,34 @@ This web application allows users to generate and validate U.S. driver's license
 4. **Frontend Setup**:
    - Open `frontend/index.html` in a web browser to view the application.
 
+### Windows PowerShell Setup
+
+If you need the development tools installed locally, use the provided PowerShell setup script.
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.\scripts\setup-windows.ps1
+```
+
+Then start the backend from the project root:
+
+```powershell
+# Use the Gradle wrapper if available
+.
+# or if Gradle is installed globally
+gradle -p backend run
+```https://vscode.dev/github/Cre4tive1/driver-license-generator/blob/agents/driver-license-generator-app-setup/backend
+
+Serve the frontend over HTTP (do not use file://):
+
+```powershell
+python -m http.server --directory frontend 3000
+```
+
+Then open:
+
+http://localhost:3000
+
 ## Dependencies
 
 - **Ktor**: For building the backend server in Kotlin.
@@ -46,4 +74,7 @@ The app uses service workers to cache assets for offline functionality and faste
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE][admin] file for details.
+
+
+[admin]: LICENSE
